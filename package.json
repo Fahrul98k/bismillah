@@ -1,5 +1,5 @@
 {
-  "name": "testsaja-pages-router",
+  "name": "testsaja-pages",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,8 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "next": "15.3.4",
+    "@vercel/og": "^0.6.2"
   },
   "devDependencies": {
     "typescript": "^5",

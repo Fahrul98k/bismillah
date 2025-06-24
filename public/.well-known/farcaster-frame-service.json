@@ -1,0 +1,40 @@
+{
+    "name": "Test Frame Farcaster",
+    "description": "Frame interaktif untuk testing Farcaster Mini App",
+    "version": "vNext",
+    "imageUrl": "https://testsaja-pages.vercel.app/api/og",
+    "buttons": [
+      {
+        "title": "🎲 Mulai Game",
+        "action": {
+          "type": "post",
+          "target": "https://testsaja-pages.vercel.app/api/frame"
+        }
+      },
+      {
+        "title": "📊 Lihat Statistik",
+        "action": {
+          "type": "post",
+          "target": "https://testsaja-pages.vercel.app/api/frame?action=stats"
+        }
+      },
+      {
+        "title": "🎯 Tantangan Baru",
+        "action": {
+          "type": "post",
+          "target": "https://testsaja-pages.vercel.app/api/frame?action=challenge"
+        }
+      },
+      {
+        "title": "🏆 Leaderboard",
+        "action": {
+          "type": "post",
+          "target": "https://testsaja-pages.vercel.app/api/frame?action=leaderboard"
+        }
+      }
+    ],
+    "input": {
+      "text": "Masukkan nama Anda"
+    },
+    "postUrl": "https://testsaja-pages.vercel.app/api/frame"
+  }
