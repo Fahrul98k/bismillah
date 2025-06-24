@@ -37,18 +37,18 @@ function handleDefault(req: NextApiRequest, res: NextApiResponse) {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>Test Frame Farcaster</title>
+        <title>Game Frame Farcaster</title>
         <meta property="fc:frame" content='{
           "version": "vNext",
-          "imageUrl": "https://testsaja-pages.vercel.app/api/og?title=Selamat Datang di Game Frame!",
+          "imageUrl": "https://bismillah-ivbw.vercel.app/api/og?title=Selamat Datang di Game Frame!",
           "buttons": [
-            {"title": "🎲 Mulai Game", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=start_game"}},
-            {"title": "📊 Lihat Statistik", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=stats"}},
-            {"title": "🎯 Tantangan Baru", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=challenge"}},
-            {"title": "🏆 Leaderboard", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=leaderboard"}}
+            {"title": "🎲 Mulai Game", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=start_game"}},
+            {"title": "📊 Lihat Statistik", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=stats"}},
+            {"title": "🎯 Tantangan Baru", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=challenge"}},
+            {"title": "🏆 Leaderboard", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=leaderboard"}}
           ],
           "input": {"text": "Masukkan nama Anda"},
-          "postUrl": "https://testsaja-pages.vercel.app/api/frame"
+          "postUrl": "https://bismillah-ivbw.vercel.app/api/frame"
         }' />
       </head>
       <body>
@@ -70,14 +70,14 @@ function handleStartGame(req: NextApiRequest, res: NextApiResponse) {
         <title>Mulai Game</title>
         <meta property="fc:frame" content='{
           "version": "vNext",
-          "imageUrl": "https://testsaja-pages.vercel.app/api/og?title=Game Dimulai!&subtitle=Tebak angka 1-10",
+          "imageUrl": "https://bismillah-ivbw.vercel.app/api/og?title=Game Dimulai!&subtitle=Tebak angka 1-10",
           "buttons": [
-            {"title": "1-3", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=submit_guess&guess=1-3"}},
-            {"title": "4-6", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=submit_guess&guess=4-6"}},
-            {"title": "7-10", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=submit_guess&guess=7-10"}},
-            {"title": "🏠 Kembali", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame"}}
+            {"title": "1-3", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=submit_guess&guess=1-3"}},
+            {"title": "4-6", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=submit_guess&guess=4-6"}},
+            {"title": "7-10", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=submit_guess&guess=7-10"}},
+            {"title": "🏠 Kembali", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame"}}
           ],
-          "postUrl": "https://testsaja-pages.vercel.app/api/frame"
+          "postUrl": "https://bismillah-ivbw.vercel.app/api/frame"
         }' />
       </head>
       <body>
@@ -102,12 +102,12 @@ function handleStats(req: NextApiRequest, res: NextApiResponse) {
         <title>Statistik</title>
         <meta property="fc:frame" content='{
           "version": "vNext",
-          "imageUrl": "https://testsaja-pages.vercel.app/api/og?title=Statistik Game&subtitle=Total Players: ${totalPlayers} | Total Games: ${totalGames}",
+          "imageUrl": "https://bismillah-ivbw.vercel.app/api/og?title=Statistik Game&subtitle=Total Players: ${totalPlayers} | Total Games: ${totalGames}",
           "buttons": [
-            {"title": "🏠 Kembali", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame"}},
-            {"title": "🔄 Refresh", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=stats"}}
+            {"title": "🏠 Kembali", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame"}},
+            {"title": "🔄 Refresh", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=stats"}}
           ],
-          "postUrl": "https://testsaja-pages.vercel.app/api/frame"
+          "postUrl": "https://bismillah-ivbw.vercel.app/api/frame"
         }' />
       </head>
       <body>
@@ -139,12 +139,12 @@ function handleChallenge(req: NextApiRequest, res: NextApiResponse) {
         <title>Tantangan Baru</title>
         <meta property="fc:frame" content='{
           "version": "vNext",
-          "imageUrl": "https://testsaja-pages.vercel.app/api/og?title=Tantangan Baru!&subtitle=${encodeURIComponent(randomChallenge)}",
+          "imageUrl": "https://bismillah-ivbw.vercel.app/api/og?title=Tantangan Baru!&subtitle=${encodeURIComponent(randomChallenge)}",
           "buttons": [
-            {"title": "🎲 Terima Tantangan", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=start_game"}},
-            {"title": "🏠 Kembali", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame"}}
+            {"title": "🎲 Terima Tantangan", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=start_game"}},
+            {"title": "🏠 Kembali", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame"}}
           ],
-          "postUrl": "https://testsaja-pages.vercel.app/api/frame"
+          "postUrl": "https://bismillah-ivbw.vercel.app/api/frame"
         }' />
       </head>
       <body>
@@ -176,12 +176,12 @@ function handleLeaderboard(req: NextApiRequest, res: NextApiResponse) {
         <title>Leaderboard</title>
         <meta property="fc:frame" content='{
           "version": "vNext",
-          "imageUrl": "https://testsaja-pages.vercel.app/api/og?title=🏆 Leaderboard&subtitle=${encodeURIComponent(leaderboardText)}",
+          "imageUrl": "https://bismillah-ivbw.vercel.app/api/og?title=🏆 Leaderboard&subtitle=${encodeURIComponent(leaderboardText)}",
           "buttons": [
-            {"title": "🏠 Kembali", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame"}},
-            {"title": "🔄 Refresh", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=leaderboard"}}
+            {"title": "🏠 Kembali", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame"}},
+            {"title": "🔄 Refresh", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=leaderboard"}}
           ],
-          "postUrl": "https://testsaja-pages.vercel.app/api/frame"
+          "postUrl": "https://bismillah-ivbw.vercel.app/api/frame"
         }' />
       </head>
       <body>
@@ -231,13 +231,13 @@ function handleSubmitGuess(req: NextApiRequest, res: NextApiResponse, inputText?
         <title>Hasil Game</title>
         <meta property="fc:frame" content='{
           "version": "vNext",
-          "imageUrl": "https://testsaja-pages.vercel.app/api/og?title=Hasil Game&subtitle=${encodeURIComponent(message)}",
+          "imageUrl": "https://bismillah-ivbw.vercel.app/api/og?title=Hasil Game&subtitle=${encodeURIComponent(message)}",
           "buttons": [
-            {"title": "🎲 Main Lagi", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=start_game"}},
-            {"title": "🏆 Lihat Score", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=leaderboard"}},
-            {"title": "🏠 Menu Utama", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame"}}
+            {"title": "🎲 Main Lagi", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=start_game"}},
+            {"title": "🏆 Lihat Score", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=leaderboard"}},
+            {"title": "🏠 Menu Utama", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame"}}
           ],
-          "postUrl": "https://testsaja-pages.vercel.app/api/frame"
+          "postUrl": "https://bismillah-ivbw.vercel.app/api/frame"
         }' />
       </head>
       <body>

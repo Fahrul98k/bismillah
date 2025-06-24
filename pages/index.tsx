@@ -4,28 +4,28 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Test Frame Farcaster - Game Interaktif</title>
+        <title>Game Frame Farcaster - Game Interaktif</title>
         <meta name="description" content="Frame Farcaster interaktif dengan game tebak angka dan leaderboard" />
         <meta property="fc:frame" content='{
           "version": "vNext",
-          "imageUrl": "https://testsaja-pages.vercel.app/api/og?title=Selamat Datang di Game Frame!&subtitle=Pilih salah satu tombol untuk mulai bermain",
+          "imageUrl": "https://bismillah-ivbw.vercel.app/api/og?title=Selamat Datang di Game Frame!&subtitle=Pilih salah satu tombol untuk mulai bermain",
           "buttons": [
-            {"title": "🎲 Mulai Game", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=start_game"}},
-            {"title": "📊 Lihat Statistik", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=stats"}},
-            {"title": "🎯 Tantangan Baru", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=challenge"}},
-            {"title": "🏆 Leaderboard", "action": {"type": "post", "target": "https://testsaja-pages.vercel.app/api/frame?action=leaderboard"}}
+            {"title": "🎲 Mulai Game", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=start_game"}},
+            {"title": "📊 Lihat Statistik", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=stats"}},
+            {"title": "🎯 Tantangan Baru", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=challenge"}},
+            {"title": "🏆 Leaderboard", "action": {"type": "post", "target": "https://bismillah-ivbw.vercel.app/api/frame?action=leaderboard"}}
           ],
           "input": {"text": "Masukkan nama Anda"},
-          "postUrl": "https://testsaja-pages.vercel.app/api/frame"
+          "postUrl": "https://bismillah-ivbw.vercel.app/api/frame"
         }' />
-        <meta property="og:title" content="Test Frame Farcaster - Game Interaktif" />
+        <meta property="og:title" content="Game Frame Farcaster - Game Interaktif" />
         <meta property="og:description" content="Frame Farcaster interaktif dengan game tebak angka dan leaderboard" />
-        <meta property="og:image" content="https://testsaja-pages.vercel.app/api/og?title=Selamat Datang di Game Frame!" />
-        <meta property="og:url" content="https://testsaja-pages.vercel.app" />
+        <meta property="og:image" content="https://bismillah-ivbw.vercel.app/api/og?title=Selamat Datang di Game Frame!" />
+        <meta property="og:url" content="https://bismillah-ivbw.vercel.app" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Test Frame Farcaster - Game Interaktif" />
+        <meta name="twitter:title" content="Game Frame Farcaster - Game Interaktif" />
         <meta name="twitter:description" content="Frame Farcaster interaktif dengan game tebak angka dan leaderboard" />
-        <meta name="twitter:image" content="https://testsaja-pages.vercel.app/api/og?title=Selamat Datang di Game Frame!" />
+        <meta name="twitter:image" content="https://bismillah-ivbw.vercel.app/api/og?title=Selamat Datang di Game Frame!" />
       </Head>
 
       <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center">
